@@ -1,0 +1,37 @@
+
+<div class="container-fluid bg-faded pt-5 pb-5">
+    <div class="container pt-5 pb-5" id="formulario">
+        <div class="row justify-content-center">
+            <div class="col-md-4 ">
+                <form #contactForm="ngForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" [(ngModel)]="contact.name" name="name" id="name" class="col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" [(ngModel)]="contact.email" name="email" id="email" class="col-12">
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">*Asunto:</label>
+                        <input type="text" [(ngModel)]="contact.topic"  class="col-12" id="topic" name="topic" #topic="ngModel" required>
+                            <div [hidden]="topic.valid || topic.pristine"
+                                class="alert alert-danger">
+                                El campo es requerido.
+                            </div>
+                    </div>
+                    <div class="form-group">   
+                    
+                    <label for="message">*Mensaje:</label>
+                        <textarea name="message" [(ngModel)]="contact.message" class="col-12" id="message" cols="30" rows="10" #message="ngModel" required></textarea>
+                            <div [hidden]="message.valid || message.pristine"
+                                class="alert alert-danger">
+                                El campo es requerido.
+                            </div> 
+                    </div>
+                    <button type="submit" class="btn" [disabled]="!contactForm.form.valid" (click)='addContact()' >Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

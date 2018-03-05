@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'AlegreyaSans-Regular';
+    src:  url('../../../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+ }
+
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:  url('../../../fonts/Open_Sans/OpenSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+@media screen and (max-width:560px) {
+    div>#title{
+        font-family: AlegreyaSans-Regular;
+        top: -80px;
+        width: 100%;
+        vertical-align: center;
+        height: 130px;
+        padding: 30px;
+        border-left: solid 1px #E6E6E6;
+        border-right: solid 1px #E6E6E6;
+        border-top: solid 1px #E6E6E6;
+        border-bottom: solid 1px #E6E6E6;
+        background-color: #fff;
+        color: black;
+        font-family: 'AlegreyaSans-Regular';
+        font-size: 200%;
+        text-align: center;
+        position: relative;
+    }
+
+    div>#titleContainer{
+        width: 157%;
+        position: relative;
+        left: -50px;
+    }
+
+    div>#image{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        top: -60px;
+        margin: 0px 0px 30px 30px;
+    }
+
+    div>#bodyConent{
+        font-family: OpenSans-Regular;
+        position: relative;
+        top: -60px;
+        margin: 0px 0px 0px 0px;
+        font-size: 100%;
+    }
+}
+
+
+#about-us{
+    background-color: white;
+    padding: 0px 60px;
+}
+
+#title{
+    font-family: AlegreyaSans-Regular;
+    top: -80px;
+    vertical-align: center;
+    height: 100px;
+    padding: 30px;
+    border-left: solid 1px #E6E6E6;
+    border-right: solid 1px #E6E6E6;
+    border-top: solid 1px #E6E6E6;
+    border-bottom: solid 1px #E6E6E6;
+    background-color: #fff;
+    color: black;
+    font-family: 'AlegreyaSans-Regular';
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+#image{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -60px;
+    margin: 0px 0px 30px 30px;
+}
+
+
+#bodyConent{
+    font-family: OpenSans-Regular;
+    position: relative;
+    top: -60px;
+    margin: 0px 0px 0px 0px;
+    font-size: 140%;
+}

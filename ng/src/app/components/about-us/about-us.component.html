@@ -1,0 +1,13 @@
+<div class="container-fluid bg-faded pt-5 pb-5">
+    <div class="container " id="about-us" *ngFor="let about of aboutUs">
+        <div class="row justify-content-center pl-md-5 pr-md-5  mb-3 pt-3 pt-md-4 mt-5" id="titleContainer" >
+            <h1 id="title"> {{ about.title }} </h1>
+        </div>
+        <div class="">
+            <img [src]='about.profile_picture_url' class="rounded float-right col-12 " id="image"/> 
+        </div>
+        <div class="" id="bodyConent">
+            <p  id="body">{{ about.body }}</p>
+        </div>
+    </div>
+</div>

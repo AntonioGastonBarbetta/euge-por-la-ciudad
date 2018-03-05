@@ -1,0 +1,56 @@
+<div id="header">
+  <div id="titleContainer" class="container-fluid row justify-content-center">
+      <h1 id={{globals.headerAnimationToggle.title}} (mouseover)="titleOverMethod()"  (mouseout)="titleOutMethod()"> 
+        <a id="linkTitle" href="">{{ mainTitle }}
+          <img id={{globals.headerAnimationToggle.avion}} (mouseover)="avionOverMethod()" (mouseout)="avionOutMethod()" src="../../../assets/fondo/avion.png">   
+        </a> 
+      </h1>
+  </div>
+
+  <nav>
+    <div>
+      <ul class="row justify-content-md-end justify-content-center mr-4">
+          <li class=""> <a href="https://www.instagram.com/eugemastropablo/" target="_blank"> <img id="imgRedSocialI" src="../../../assets/redesSociales/002-instagram-draw-logo.png" class="" alt=""> </a> </li>
+          <li class=" ml-4"> <a href="https://twitter.com/eugemastropablo?lang=es" target="_blank"> <img  id="imgRedSocialT" src="../../../assets/redesSociales/003-twitter-draw-logo.png" class="" alt=""> </a> </li>
+          <li class=" ml-3"> <a href="https://www.facebook.com/Euge-por-la-ciudad-1348501058539233/" target="_blank"> <img  id="imgRedSocialF" src="../../../assets/redesSociales/001-facebook-drawn-logo.png" class="" alt=""> </a> </li>
+          <li class=" ml-3"> <a href="https://www.youtube.com/channel/UCwrsfaCNPSDjbfo9lLSHB7A" target="_blank"> <img  id="imgRedSocialY" src="../../../assets/redesSociales/004-multimedia.png" class="" alt=""> </a> </li>
+        </ul>
+    </div>
+</nav>
+
+  <div class="navbar-border">
+    <nav class=" row justify-content-md-center navbar col-12 navbar-toggleable-md navbar-light">
+      <div class="row justify-content-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="" (mouseout)="sectionMethod()">
+        <div class="contenido">
+          <div class=" collapse navbar-collapse ml-4" id="navbarTogglerDemo01" >
+            <ul class="pl-md-3 ml-md-3 navbar-nav mr-auto  mt-2 mt-lg-0" >
+              <li class="nav-item active navbar" id="li1">
+                <a class="nav-link navbarLink" id={{globals.navbar.home}} (mouseover)="homeMethod()" routerLink="/home">Home <span class="sr-only"></span></a>
+              </li>
+              <li class=" border-top-0 nav-item navbar" id="li2">
+                <a class="nav-link navbarLink subrayado" id={{globals.navbar.notas}} (mouseover)="notasMethod()"  routerLink="/notas">Notas</a>
+              </li>
+              <li class="nav-item navbar" id="li3">
+                  <a class="nav-link navbarLink" id='{{globals.navbar.streetArt}}' (mouseover)="streetArtMethod()" routerLink="/street-art">Street art</a>
+              </li>
+              <li class="nav-item navbar" id="li4">
+                  <a class="nav-link navbarLink" id= '{{globals.navbar.hola}}' (mouseover)="holaMethod()" routerLink="/hola">¡Hola!</a>
+                </li>
+              <li class="nav-item navbar" id="li5">
+                  <a class="nav-link navbarLink" id='{{globals.navbar.contacto}}'(mouseover)="contactoMethod()"  routerLink="/contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+</div>
+

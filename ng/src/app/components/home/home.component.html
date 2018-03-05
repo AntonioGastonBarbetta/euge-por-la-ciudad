@@ -1,0 +1,23 @@
+
+
+<div class="container-fluid bg-faded">
+  <div class="container  pb-5">
+    <div class="card-deck">
+        <div  class="col-12  col-md-6 col-lg-4 pt-5" id="nota" *ngFor="let new of news">
+          <a id="link" routerLink="/notas/{{new.slug}}">
+            <div class="card " id="animationBorder">
+              <div class="card-block mb-3 mb-md-0">
+                <h4 class="card-title "  id="title">{{ new.title }} </h4>
+              </div>
+              <img class="card-img" id="image"  src="{{ new.cover_image_url }}" alt="Card image cap">
+              <div class="card-block mb-2 mb-md-0">
+                <p class="card-text" id="synopsis"> {{ new.synopsis }} </p>
+              </div>
+            </div>
+          </a>
+        </div> 
+      </div>
+  </div>
+</div>
+
+

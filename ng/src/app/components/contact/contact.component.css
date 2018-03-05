@@ -1,0 +1,19 @@
+#formulario{
+    background-color: white;
+}
+
+#name:focus{
+    outline-color: #E2A9F3;
+}
+
+#email:focus{
+        outline-color: #E2A9F3;
+}
+
+#topic:focus{
+    outline-color: #E2A9F3;
+}
+
+#message:focus{
+    outline-color: #E2A9F3;
+}
